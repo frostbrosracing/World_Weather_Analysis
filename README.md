@@ -17,20 +17,20 @@ The following steps were conducted in order to generate a final vacation itinera
 
 ![WeatherPy_vacation_map.png](https://github.com/frostbrosracing/World_Weather_Analysis/blob/main/Vacation_Search/WeatherPy_vacation_map.png)
 
-6.  This new .csv file was again read into a new **Python** DataFrame and plotted using **Google** gmaps.  From this map, four cities were selected and their latitude and longitude pairs were retrieved and captured in individual dataframes in order to use those values to generate a directions layer map using gmaps and directions.  In this instance driving directions were requested.
+6.  This .csv file was read into a new **Python** DataFrame and plotted using **Google** gmaps.  From this map, four cities were selected and their latitude and longitude pairs were retrieved, and dataframes for each city were created.  This enabled the use of the coordinates in a format appropriate to generate a map using the Google Cloud Platform resources.
 
 ![WeatherPy_travel_map.png](https://github.com/frostbrosracing/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map.png)
 
-7.  A combined Itinerary DataFrame was made by concatenating each of the city DataFrames and was used to render a final interactive **Google Map** with markers and pop-ups.
+7.  A combined Itinerary DataFrame was made by compiling each of the city DataFrames, and was used to render a final interactive **Google Map** with markers and pop-ups.
 
 ![WeatherPy_travel_map_markers.png](https://github.com/frostbrosracing/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map_markers.png)
  
 ## Results of the weather and mapping APIs
-From the original 2,000 latitude and longitude pairs that were randomly generated, 779 cities were identified.  Of these 779 cities, 715 were matched to weather data from the OpenWeatherMap API.  In this exercise, four cities were chosen in the Northeast of the United States according to the desired weather parameters.  These were chosen from 348 cities that had a hotel registered with Google within 5 kilometers of the original randomly generated coordinates.  These cities with their hotel name and current weather conditions at the time of reporting are listed below:
+From the original 2,000 latitude and longitude pairs that were randomly generated, 779 cities were identified.  Of these 779 cities, 715 were matched to weather data from the OpenWeatherMap API.  In this exercise, four cities were chosen in the Northeast of the United States according to the desired weather parameters.  These were chosen from 348 cities that had a hotel registered with Google within 5 kilometers of the original randomly generated coordinates.  These cities, along with their hotel name and current weather conditions at the time of reporting are listed below:
 1.  Bloomfield, NJ:  La Quinta Inn & Suites by Wyndham Clifton/Rutherford (current weather:clear sky and 60°F)
 2.  Palmer, MA:  Wedgewood Motel (current weather: scattered clouds and 62°F)
 3.  Norfolk, MA: Residence Inn by Marriott Boston Norwood/Canton (current weather: clear sky and 64°F)
 4.  Plymouth, MA: Rodeway Inn Middleboro-Plymouth (current weather: clear sky and 62°F)
 
 ## World Weather and Vacation Planning Summary
-By using APIs, the process of consolidating large amounts of data for specific uses becomes streamlined.  In this case, two APIs were used in conjunction to layer the effectiveness of the reporting.  This is a pinpointed example to showcase just a very small sample of this effectiveness in an application that might offer some guidance in helping potential vacationers with their destination choice. 
+By using APIs, the process of consolidating large amounts of data for specific uses becomes streamlined.  By using two APIs in conjunction, we were able to add depth to, and increase the effectiveness of the reporting.  This is an example meant to showcase just a specific use case of the effectiveness of APIs by highlighting how they might offer some helpful information to potential vacationers when selecting their destination choice. 
