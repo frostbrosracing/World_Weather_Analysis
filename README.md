@@ -3,7 +3,7 @@
 ## Project Overview
 
 #### Resources
-- Data was collected from OpenWeatherMap.org through the use of an API key
+- Data was collected from OpenWeatherMap.org through the use of an API **(Application Programming Interface)** key
 - An API key was generated from Google Cloud Platform in order to use the Maps, Places, and Directions APIs
 - Software: Python 3.7.9, Jupyter Notebook 6.1.4, Pandas 1.1.3, Numpy 1.17.0
 
@@ -33,4 +33,4 @@ From the original 2,000 latitude and longitude pairs that were randomly generate
 4.  Plymouth, MA: Rodeway Inn Middleboro-Plymouth (current weather: clear sky and 62°F)
 
 ## World Weather and Vacation Planning Summary
-Based on the analysis, it becomes clear that there's an underserved community in rural city neighborhoods by drivers.  As shown in the **Total Fare by City Type** chart above, 
+By using APIs, the process of consolidating large amounts of data for specific uses becomes streamlined.  In this case, two APIs were used in conjunction to layer the effectiveness of the reporting.  This is a pinpointed example to showcase just a very small sample of this effectiveness in an application that might offer some guidance in helping potential vacationers with their destination choice. 
