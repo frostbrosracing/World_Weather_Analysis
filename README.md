@@ -7,13 +7,13 @@
 - An API key was generated from Google Cloud Platform in order to use the Maps, Places, and Directions APIs
 - Software: Python 3.7.9, Jupyter Notebook 6.1.4, Pandas 1.1.3, Numpy 1.17.0
 
-#### This project was completed to collect city specific weather data that will allow users to select a range of vacation destinations based on desired weather conditions.
+#### The goal of this project was to collect city specific weather data that would allow users to select a range of vacation destinations based on desired weather conditions.
 The following steps were conducted in order to generate a final vacation itinerary for travelers.
-1.  A list of 2,000 ***random*** latitudes and longitudes was generated.  By using the **citipy** module to identify the nearby city to the rendered coordinates, a list of **779** cities resulted.  
-2.  A call was made to **OpenWeatherMap.org** with an API key that collected each city's geographic coordinates and weather conditions in **JSON (JavaScript Object Notation)** format.  This information was then parsed and added to a **Pandas** DataFrame, trimmed to a list of **715** located cities, and written to a *.csv* file.
-3.  The recorded .csv file was then read into a new **Python** script in which the user is prompted to input the desired minimum and maximum temperature for their vacation destination.
-4.  In this instance, 60°F was set for the minimum temperature and 95°F was set for the maximum temperature, resulting in a list of **379** cities.  Because there were three rows of data that were incomplete, those rows with null values were dropped and final list of **376** cities remained and were added to a new DataFrame with an additional column created to contain a ***Hotel Name*** for each city in the list.
-5.  A call was then made to the **Google** gmaps and places to add the hotel name for each city to the DataFrame.  Any cities that did not show a hotel were dropped, and **348** cities remained on the list.  A new *.csv* file was written with the compiled data and an interactive map was generated with markers for each city in the list.
+1.  A list of **779** cities resulted from running 2,000 ***randomly*** generated coordinates through the **citipy** module, which identifies the closest city to a given set of coordinates. 
+2.  An API call made to **OpenWeatherMap.org** collected each city's geographic coordinates and weather conditions in **JSON (JavaScript Object Notation)** format. This information was then parsed and added to a **Pandas** DataFrame, trimmed to a list of **715** located cities, and written to a *.csv* file.
+3.  The recorded .csv file was then read into a new **Python** script which prompted the user to input the desired minimum and maximum temperatures for their vacation destination.
+5.  In this instance, 60°F was set for the minimum temperature and 95°F was set for the maximum temperature, narrrowing that list to **379** cities.  Because there were three rows of data that were incomplete, those rows with null values were dropped.  This left **376** cities to be added to a new DataFrame with an additional column created to capture the ***Hotel Name*** for each city in the list.
+6.  Another API call to **Google** gmaps and places was made to add the hotel name for each city to the DataFrame.  Any cities that did not show a hotel were dropped, and **348** cities remained on the list.  A new *.csv* file was written with the compiled data, and an interactive map was generated with markers for each city in the list.
 
 ![WeatherPy_vacation_map.png](https://github.com/frostbrosracing/World_Weather_Analysis/blob/main/Vacation_Search/WeatherPy_vacation_map.png)
 
